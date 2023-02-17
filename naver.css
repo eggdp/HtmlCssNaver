@@ -6,6 +6,12 @@ html,body{
     padding: 0;
     font-family: Dotum,'돋음', Helvetica;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.inline-block{
+    display: inline-block;
+}
 #fixed{
     position: fixed;
     right: 50px;
@@ -45,7 +51,7 @@ header{
 }
 #header-search{
     clear:both;
-    padding-top:12px;
+    padding-top:45px;
 }
 #header-search  h1 {
     width: 240px;
@@ -173,14 +179,21 @@ main{
 
 }
 #main-centered{
-    padding: 8px 10px 0;
+    padding: 8px 10px;
     width:1100px;
+}
+#main-first-block{
+    display:inline-block;
+    width:100%;
 }
 #main-ad{
     display:inline-block;
     width: 740px;
     height: 120px;
     background: #555;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    float:left;
 }
 #main-login{
     display:inline-block;
@@ -188,42 +201,97 @@ main{
     height: 120px;
     vertical-align: top;
     background: red;
+    margin-bottom: 8px;
+    float:left;
+}
+#main-second-block .inline-block:first-child{
+    width: 740px;
+}
+#main-second-block .inline-block:last-child{
+    width: 332px;
+    vertical-align: top;
+    
 }
 #main-ytn{
     display:inline-block;
     width: 740px;
     height: 46px;
     background: red;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+#main-ytn h3,
+#main-ytn ol{  
+    display: inline-block;
 }
 #main-newsstand{
     display:inline-block;
     width: 740px;
     height: 246px;
     background: red;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+#main-newsstand h3{
+    height: 45px;
+    border-bottom: 1px solid #ebeef3;
+}
+#main-newsstand ul{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    /* margin: 10px 35px 0 30px; */
+}
+#main-newsstand li{
+    float:left;
+    width: 123px;
+    height: 67px;
+    border-bottom: 1px solid #ebeef3;
+    border-right: 1px solid #ebeef3;
+    text-align: center;
+}
+#main-newsstand li img{
+    width: 122px;
+    height: 37px;
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #main-weather{
     display:inline-block;
     width: 332px;
     height: 142px;
     background: red;
+    margin-bottom: 8px;
 }
 #main-second-ad{
     display:inline-block;
     width: 332px;
     height: 150px;
-    
+    margin-bottom: 8px;
 }
 #main-category{
     display:inline-block;
     width: 740px;
     height: 837px;
     background: red;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    float: left;
 }
 #main-shopping{
     display:inline-block;
     width: 332px;
     height: 837px;
     background: red;
+    margin-bottom: 8px;
+    float: left;
+}
+#main-third-block,
+#main-fourth-block{
+    display: inline-block;
+    width: 100%;
 }
 #main-event{
     display:inline-block;
@@ -231,10 +299,13 @@ main{
     height:130px;
     background: red;
     vertical-align: top;
+    margin-right: 8px;
+    float: left;
 }
-#main-thrid-ad{
+#main-third-ad{
     display:inline-block;
     width: 332px;
     height: 130px;
     background: red;
+    float: left;
 }
