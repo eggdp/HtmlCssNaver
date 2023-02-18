@@ -228,6 +228,13 @@ main{
     vertical-align: top;
     margin-bottom: 8px;
 }
+#main-ytn h3, #main-newsstand h3{
+    font-size: 14px;
+    font-family:"돋움";
+    /* line-height: 35px; */
+    padding-top: 15px;
+    padding-left: 15px;
+}
 #main-second-block .float-left:first-child{
     width: 740px;
     margin-right: 8px;
@@ -350,4 +357,95 @@ main{
     height: 130px;
     background: white;
     float: left;
+}
+#main-category-top{
+    display: inline-block;
+    width: 100%;
+}
+#subject-list,
+#subject-all,
+#subject-prev,
+#subject-next{
+    float: left;
+    height: 45px;
+}
+#subjetc-list{
+    width: 603px;
+    position: relative;
+}
+#subject-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 45px;
+    width: 1000px;
+}
+#subject-list li{
+    float: left;
+    margin-right: 10px;
+    padding: 14px 7px 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+#subject-list li.highlight{
+    border-bottom: 3px solid #00c73c;
+    color: #00b336;
+}
+#subject-all, #subject-prev, #subject-next{
+    position: relative;
+    width:45px;
+    background: white;
+    border: none;
+    border-left: 1px solid #ebeef3;
+    background: white;
+}
+#subject-all span:last-child{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 20px;
+    height: 14px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+    background-repeat: no-repeat;
+    background-position: -218px -257px;
+}
+#subject-prev span:last-child{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 8px;
+    height: 16px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+    background-repeat: no-repeat;
+    background-position: -320px 0;
+}
+#subject-next span:last-child{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 8px;
+    height: 16px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+    background-repeat: no-repeat;
+    background-position: -320px -52px;
+}
+.opacity{
+    opacity: 0.5;
+    background: white;
+}
+.opacity.left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 15px;
+}
+.opacity.right{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 15px;
 }

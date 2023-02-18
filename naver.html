@@ -41,7 +41,7 @@
     </header>
     <nav>
         <div class="center-align-relative">
-            <div id="search-ranking">
+            <section id="search-ranking">
                 <h2 class="blind">실시간 검색어</h2>
                 <div>
                 <span id="rank-number">1</span>>
@@ -88,26 +88,26 @@
                 <li><a href=""><span></span><span class="blind">네이버페이</span></a></li>
             </ul>
             <div class="nav-divider"></div>
-        </div>
+        </section>
     </nav>
     
     <main>
         <div id="main-centered" class="center-align">
             <div id="main-first-block">
-                <div id="main-ad"></div>
-                <div id="main-login">
+                <section id="main-ad"></section>
+                <section id="main-login">
                     <h3>로그인</h3>
-                </div>
+                </section>
             </div>
             <div id="main-second-block">
                 <div class="float-left">
-                    <div id="main-ytn">
+                    <section id="main-ytn">
                         <h3>연합뉴스</h3>
                         <ol>
                             <li>충격) 코로나 바이러스</li>
                         </ol>
-                    </div>
-                    <div id="main-newsstand">
+                    </section>
+                    <section id="main-newsstand">
                         <h3>뉴스 스탠드</h3>
                         <ul>
                             <li><img src="./국민일보.png" alt="국민일보" /></li>
@@ -130,7 +130,7 @@
                             <li><img src="./KBS.png" alt="KBS" /></li>
 
                         </ul>
-                    </div>
+                    </section>
                 </div>
                 <div class="float-left">
                     <div id="main-weather"></div>
@@ -139,7 +139,41 @@
                 </div>
                 <div id="main-third-block">
                     <div id="main-category">
-                        <h3>주제별 보기</h3>
+                        <h3 class="blind">주제별 보기</h3>
+                        <div id="main-category-top">
+                            <button id="subject-all">
+                                <span class="blind">전체 주제 열기</span>
+                                <span></span>
+                            </button>
+                            <div id="subject-list">
+                                <div class="opacity left"></div>
+                                <ul>
+                                    <li>리빙</li>
+                                    <li>푸드</li>
+                                    <li>스포츠</li>
+                                    <li>자동차</li>
+                                    <li>패션뷰티</li>
+                                    <li>부모</li>
+                                    <li class="highlight">건강</li>
+                                    <li>웹툰</li>
+                                    <li>게임</li>
+                                    <li>티비</li>
+                                    <li>TV연예</li>
+                                    <li>뮤직</li>
+                                    <li>뮤직</li>
+                                    <li>뮤직</li>
+                                </ul>
+                                <div class="opacity right"></div>
+                            </div>
+                            <button id="subject-prev">
+                                <span class="blind">이전 주제</span>
+                                <span></span>
+                            </button>
+                            <button id="subject-next">
+                                <span class="blind">다음 주제</span>
+                                <span></span>
+                            </button>
+                        </div>
                     </div>
                     <div id="main-shopping">
                         <iframe src="https://castbox.shopping.naver.com/shopbox/main.nhn?" 
